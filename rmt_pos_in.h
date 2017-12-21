@@ -25,6 +25,8 @@ typedef struct
 	
 }AnalogInput_s;
 
+
+
 typedef struct
 {
 	u16 is_zero_mid;

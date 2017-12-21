@@ -4,6 +4,8 @@
 #include "actr_struct.h"
 #include "actr_input_port.h"
 
+
+
 AnalogInput_s sRmtCurrInput;
 AnalogInput_s *p_sRmtCurrInput = &sRmtCurrInput;
 

@@ -1,0 +1,19 @@
+
+
+
+
+
+ACTR Work Status:
+	actr_cfg.c      执行器设置
+	loc_sw_ctr.c 	现场开关控制
+	rmt_sw_ctr.c 	远方开关控制
+[*]	rmt_adj_ctr.c 	远方调节控制
+
+[*]	rmt_pos_in.c 	远方位置输入
+	actr_pos_io.c 	执行器位置输入输出
+	actr_protect.c 	执行器保护
+[*]	phase_seq.c 	相序检测
+	savedat.c 		保存数据
+	motor_drv.c 	电机驱动
+	actr_display.c  显示
+

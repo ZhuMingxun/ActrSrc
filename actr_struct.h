@@ -13,15 +13,6 @@ typedef struct
 
 }Menu_s;
 
-typedef struct
-{
-	u16 min;
-	u16 max;
-
-}VarRange_s;
-
-
-
 
 typedef struct
 {
