@@ -1,4 +1,7 @@
+#ifndef _ACTR_STRUCT_H
+#define _ACTR_STRUCT_H
 
+#define     RESERVE_ONE_DECIMAL(varf)  ((float)((int)((varf+0.05f)*10.0f))/10.0f)
 
 typedef struct
 {
@@ -13,6 +16,30 @@ typedef struct
 
 }Menu_s;
 
+typedef struct
+{
+	u16 low;
+	u16 high;
+
+}VarRange_s;
+
+typedef struct
+{
+	u16 is_zero_mid;//编码器是否过零
+	volatile u16 var;
+	VarRange_s range;
+
+	volatile float pos_pct;//0%-100%
+	volatile float current_mA;//4-20mA
+	
+	u16   (*VarSample)();//采样函数
+	void  (*PosSampleAndFilter)();//滤波函数
+	float (*GetPos_pct)();
+	float (*GetCurrent_mA)();
+	
+}ActrPos_s;
+
+
 
 typedef struct
 {
@@ -23,9 +50,7 @@ typedef struct
 	
 }CurrentOutput_s;
 
-
-
-
+#endif
 
 
 
